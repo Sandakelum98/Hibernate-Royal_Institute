@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneRegistration" prefHeight="515.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.studentManagement.controller.RegistrationFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="11.0" prefHeight="53.0" prefWidth="743.0" text="Registration" textFill="#1687a7">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="77.0" prefHeight="229.0" prefWidth="714.0" style="-fx-border-color: #1687a7;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Select Student" textFill="#1687a7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="104.0" text="Student ID : " />
+            <Label fx:id="lblStudentId" layoutX="88.0" layoutY="104.0" prefHeight="17.0" prefWidth="82.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="106.0" text="Student Name :" />
+            <Label fx:id="lblStudentName" layoutX="440.0" layoutY="106.0" prefHeight="17.0" prefWidth="220.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSearch" layoutX="171.0" layoutY="46.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #1687a7;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtStudentId" layoutX="14.0" layoutY="46.0" onAction="#txtStudentIdOnAction" promptText="Enter student ID" />
+            <Label layoutX="14.0" layoutY="151.0" text="Address :" />
+            <Label fx:id="lblAddress" layoutX="88.0" layoutY="151.0" prefHeight="17.0" prefWidth="220.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="151.0" text="Contact Number :" />
+            <Label fx:id="lblContact" layoutX="440.0" layoutY="151.0" prefHeight="17.0" prefWidth="220.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnNew" layoutX="264.0" layoutY="46.0" onAction="#btnNewOnAction" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: #1687a7;" text="New" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="612.0" layoutY="16.0" text="RegNo :" />
+            <Label fx:id="lblRegNo" layoutX="659.0" layoutY="16.0" prefHeight="17.0" prefWidth="49.0" text="R001" textFill="#e81a08">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnCancel" layoutX="644.0" layoutY="479.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #1687a7;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRegister" layoutX="484.0" layoutY="479.0" onAction="#btnRegisterOnAction" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #1687a7;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="14.0" layoutY="324.0" prefHeight="146.0" prefWidth="346.0" style="-fx-border-color: #1687a7;">
+         <children>
+            <Label layoutX="11.0" layoutY="10.0" text="Select Course" textFill="#1687a7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbCourseName" focusColor="#1687a7" layoutX="106.0" layoutY="60.0" prefHeight="25.0" prefWidth="220.0" />
+            <Label layoutX="13.0" layoutY="64.0" text="Course Name :" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="380.0" layoutY="324.0" prefHeight="146.0" prefWidth="346.0" style="-fx-border-color: #1687a7;">
+         <children>
+            <Label layoutX="11.0" layoutY="10.0" text="Payment" textFill="#1687a7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="64.0" text="Registration Fee :" />
+            <TextField fx:id="txtRegFee" layoutX="122.0" layoutY="61.0" prefHeight="25.0" prefWidth="205.0" promptText="LKS" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="15.0" layoutY="56.0" prefHeight="17.0" prefWidth="92.0" text="2020 - 01 - 05 ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnViewRegistration" layoutX="14.0" layoutY="479.0" onAction="#btnViewRegistrationOnAction" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #1687a7;" text="View Registration Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

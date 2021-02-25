@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="504.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.studentManagement.controller.ViewRegistrationDetailsFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="21.0" prefHeight="53.0" prefWidth="753.0" text="Registration Details" textFill="#1687a7">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblRegistrationDetail" layoutX="11.0" layoutY="111.0" prefHeight="382.0" prefWidth="730.0">
+        <columns>
+          <TableColumn fx:id="clmRegNo" prefWidth="101.0" text="Registration No" />
+          <TableColumn fx:id="clmRegDate" prefWidth="201.0" text="Registration Date" />
+            <TableColumn fx:id="clmStudentId" prefWidth="152.0" text="Student ID" />
+            <TableColumn fx:id="clmCourseCode" prefWidth="133.0" text="Course Code" />
+            <TableColumn fx:id="clmRegFee" prefWidth="140.0" text="Registration Fee (LKS)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

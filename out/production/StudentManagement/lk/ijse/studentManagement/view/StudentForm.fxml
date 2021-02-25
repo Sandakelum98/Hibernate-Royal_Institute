@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="515.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.studentManagement.controller.StudentFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="11.0" prefHeight="53.0" prefWidth="743.0" text="Students" textFill="#1687a7">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblStudent" layoutX="15.0" layoutY="266.0" prefHeight="234.0" prefWidth="713.0">
+         <columns>
+            <TableColumn fx:id="clmStudentId" prefWidth="68.0" text="Student ID" />
+            <TableColumn fx:id="clmStudentName" prefWidth="187.0" text="Student Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="153.0" text="Address" />
+            <TableColumn fx:id="clmContact" prefWidth="125.0" text="Contact" />
+            <TableColumn fx:id="clmDOB" prefWidth="102.0" text="DOB" />
+            <TableColumn fx:id="clmGender" prefWidth="76.0" text="Gender" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="14.0" layoutY="72.0" prefHeight="151.0" prefWidth="713.0" style="-fx-border-color: #1687a7;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Add New Student" textFill="#1687a7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtStudentName" focusColor="#1687a7" labelFloat="true" layoutX="209.0" layoutY="43.0" prefHeight="25.0" prefWidth="155.0" promptText="Student Name" />
+            <JFXTextField fx:id="txtAddress" focusColor="#1687a7" labelFloat="true" layoutX="407.0" layoutY="43.0" prefHeight="25.0" prefWidth="155.0" promptText="Address" />
+            <JFXTextField fx:id="txtContact" focusColor="#1687a7" labelFloat="true" layoutX="16.0" layoutY="88.0" prefHeight="25.0" prefWidth="155.0" promptText="Contact" />
+            <JFXTextField fx:id="txtDOB" focusColor="#1687a7" labelFloat="true" layoutX="209.0" layoutY="88.0" prefHeight="25.0" prefWidth="155.0" promptText="DOB" />
+            <JFXButton fx:id="btnSave" layoutX="603.0" layoutY="43.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #1687a7;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" layoutX="603.0" layoutY="90.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #1687a7;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="16.0" layoutY="47.0" text="Student ID :" />
+            <Label fx:id="lblStudentID" layoutX="92.0" layoutY="47.0" prefHeight="17.0" prefWidth="46.0" text="S001" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="407.0" layoutY="94.0" text="Gender :" />
+            <JFXComboBox fx:id="cmbGender" focusColor="#1687a7" layoutX="458.0" layoutY="90.0" prefHeight="25.0" prefWidth="103.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnUpdate" layoutX="524.0" layoutY="234.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #1687a7;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="616.0" layoutY="234.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #1687a7;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

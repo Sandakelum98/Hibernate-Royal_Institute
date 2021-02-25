@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="StudentManagement.jnlp">
+  <information>
+    <title>StudentManagement</title>
+    <vendor>Unknown</vendor>
+    <description>StudentManagement</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="StudentManagement.jar" size="98615" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="AppInitializer"  name="StudentManagement" />
+  <update check="background"/>
+</jnlp>

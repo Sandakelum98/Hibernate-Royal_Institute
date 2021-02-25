@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="StudentManagement">
+    <output-path>$PROJECT_DIR$/out/artifacts/StudentManagement</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="AppInitializer" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="StudentManagement.jar">
+        <element id="module-output" name="StudentManagement" />
+      </element>
+    </root>
+  </artifact>
+</component>
